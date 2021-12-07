@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: SF Pro Display;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    background-color: black;
+    min-height: 1080px;
+}
+
+
+/* ----nav panel */
+
+.nav_ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    padding: 50px 0 50px 0;
+}
+
+#frame_li_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 16px 16px 0px;
+}
+
+#frame_li_2,
+#frame_li_3,
+#frame_li_4,
+#frame_li_5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+#frame_li_6 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 0px 16px 16px;
+    margin-left: 277px;
+    background: linear-gradient(90deg, rgba(27, 144, 203, 50%) 0%, #CC61FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav_li_gradient {
+    font-weight: 600;
+}
+
+.nav_li {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.48);
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: .2s;
+    -webkit-transition: .6s;
+}
+
+.nav_li:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* скролл выкл */
+
+::-webkit-scrollbar {
+    width: 0;
+}
