@@ -11,8 +11,15 @@ a {
 }
 
 .main {
-    background-color: black;
     min-height: 1080px;
+    background-color: black;
+}
+
+
+/* скролл выкл */
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 
@@ -48,9 +55,14 @@ a {
     align-items: flex-start;
     padding: 16px 0px 16px 16px;
     margin-left: 277px;
-    background: linear-gradient(90deg, rgba(27, 144, 203, 50%) 0%, #CC61FF 100%);
+    background: linear-gradient(90deg, rgba(27, 144, 203, 100%) 0%, rgba(204, 97, 255, 100%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+}
+
+#frame_li_6:hover {
+    opacity: 1;
 }
 
 #nav_li_gradient {
@@ -78,8 +90,72 @@ a {
 }
 
 
-/* скролл выкл */
+/* ---title */
 
-::-webkit-scrollbar {
-    width: 0;
+.title_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48.83px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 55%;
+}
+
+.title_sec_text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.48);
+    width: 30%;
+    margin: 0 0 56px 0;
+}
+
+
+/* ----кнопка */
+
+.btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 16px, 32px;
+    /* --- */
+    box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.8);
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #0088CC, #CC61FF, #0088CC);
+    background-size: 400%;
+    padding-left: 16px, 32px;
+}
+
+
+/* ----анимация кнопки при наведении */
+
+.btn:hover {
+    animation: button 6s linear infinite;
+}
+
+@keyframes button {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.text_in_btn {
+    color: black;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.text_in_btn:hover {
+    color: black;
 }
