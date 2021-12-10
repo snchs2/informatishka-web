@@ -39,7 +39,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px 16px 16px 0px;
+    padding: 10px 10px 10px 0px;
 }
 
 #frame_li_2,
@@ -49,7 +49,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px;
+    padding: 10px;
 }
 
 #frame_li_6 {
@@ -74,7 +74,7 @@ a {
 
 .nav_li {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
@@ -96,7 +96,7 @@ a {
 
 .title_text {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 48.83px;
     line-height: 58px;
     color: #FFFFFF;
@@ -107,7 +107,7 @@ a {
 
 .title_sec_text {
     font-style: normal;
-    font-weight: 100;
+    font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.48);
