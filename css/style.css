@@ -18,11 +18,47 @@ a {
     background-color: black;
 }
 
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
 
-/* скролл выкл */
+@media (min-width: 767px) {
+    .container {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+    #frame_li_6 {
+        margin-left: 0%;
+    }
+    .nav_li {
+        font-size: 12px !important;
+    }
+}
 
-::-webkit-scrollbar {
-    width: 0;
+@media (min-width: 1000px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #frame_li_6 {
+        margin-left: 10%;
+    }
+    .nav_li {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1112px;
+        margin: 0 auto;
+    }
+    .nav_li {
+        font-size: 16px !important;
+    }
 }
 
 
@@ -39,7 +75,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 10px 10px 0px;
+    padding: 16px 16px 16px 0px;
 }
 
 #frame_li_2,
@@ -49,7 +85,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px;
+    padding: 16px;
 }
 
 #frame_li_6 {
@@ -57,7 +93,6 @@ a {
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 0px 16px 16px;
-    margin-left: 277px;
     background: linear-gradient(90deg, rgba(27, 144, 203, 100%) 0%, rgba(204, 97, 255, 100%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -102,7 +137,7 @@ a {
     color: #FFFFFF;
     margin-top: 80px;
     margin-bottom: 40px;
-    width: 55%;
+    width: 60%;
 }
 
 .title_sec_text {
@@ -119,21 +154,26 @@ a {
 /* ----кнопка */
 
 .btn {
+    min-width: 238px;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 16px, 32px;
-    /* --- */
-    box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.8);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    /* padding: 16px 32px; */
+    box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.5);
     border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
     background: linear-gradient(90deg, #0088CC, #CC61FF, #CC61FF, #0088CC, #0088CC);
     background-size: 400%;
-    padding-left: 16px, 32px;
+    padding: 16px 32px;
+}
+
+.text_in_btn {
+    margin: 0px 10px;
 }
 
 
@@ -150,14 +190,4 @@ a {
     100% {
         background-position: 400%;
     }
-}
-
-.text_in_btn {
-    color: white;
-    font-weight: 600;
-    transition: 0.6s;
-}
-
-.text_in_btn:hover {
-    color: white;
 }
