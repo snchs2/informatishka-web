@@ -9,8 +9,8 @@ body {
     font-family: "SF Pro Display", sans-serif;
 }
 
-body._lock {
-    overflow: hidden;
+.body._lock {
+    overflow: hidden !important;
 }
 
 a {
@@ -102,6 +102,14 @@ a {
 
 /* ---title */
 
+.title_img {
+    float: right;
+    margin-top: 80px;
+    width: 547px;
+    height: 416px;
+    pointer-events: none;
+}
+
 .title_text {
     font-style: normal;
     font-weight: 500;
@@ -110,7 +118,7 @@ a {
     color: #FFFFFF;
     margin-top: 80px;
     margin-bottom: 40px;
-    width: 55%;
+    width: 100%;
 }
 
 .title_sec_text {
@@ -119,7 +127,6 @@ a {
     font-size: 20px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.48);
-    width: 30%;
     margin: 0 0 56px 0;
 }
 
@@ -169,11 +176,13 @@ a {
 /* --адаптив */
 
 @media (max-width: 768px) {
+    /* контейнер */
     .container {
         max-width: 768px;
         margin: 0 auto;
         padding: 0 0 0 20px;
     }
+    /* навигационная панель */
     .menu_body {
         position: fixed;
         top: 0;
@@ -250,6 +259,31 @@ a {
     .header_burger::after {
         bottom: 0;
     }
+    /* заголовок главной страницы */
+    .title_text {
+        margin-top: 175px;
+        width: 75%;
+    }
+    .title_img {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 425px;
+        margin: 0 auto;
+        padding: 0 0 0 20px;
+    }
+    .header_burger {
+        left: 87%;
+    }
+    .title_text {
+        margin-top: 145px;
+        width: 100%;
+        font-size: 32.25px;
+    }
+    .
 }
 
 @media (min-width: 769px) {
@@ -259,6 +293,13 @@ a {
     }
     .nav_li {
         font-size: 13px !important;
+    }
+    .title_text {
+        width: 49%;
+    }
+    .title_img {
+        width: 290px;
+        height: 220px;
     }
 }
 
@@ -273,6 +314,13 @@ a {
     .menu_body {
         min-height: 70px;
     }
+    .title_text {
+        width: 39%;
+    }
+    .title_img {
+        width: 547px;
+        height: 416px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -285,5 +333,8 @@ a {
     }
     .nav_li {
         font-size: 16px !important;
+    }
+    .title_text {
+        width: 100%;
     }
 }
