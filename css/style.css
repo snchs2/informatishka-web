@@ -17,8 +17,11 @@ a {
     text-decoration: none;
 }
 
+
+/* ---ГЛАВНАЯ */
+
 .main {
-    min-height: 1000vh;
+    min-height: 105vh;
     background-color: black;
 }
 
@@ -81,7 +84,6 @@ a {
 
 .nav_li {
     list-style: none;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -111,7 +113,6 @@ a {
 }
 
 .title_text {
-    font-style: normal;
     font-weight: 500;
     font-size: 48.83px;
     line-height: 58px;
@@ -122,7 +123,6 @@ a {
 }
 
 .title_sec_text {
-    font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -135,7 +135,6 @@ a {
 
 .btn {
     min-width: 238px;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -173,6 +172,71 @@ a {
 }
 
 
+/* ----О ПРОЕКТЕ */
+
+.about_project {
+    min-height: 100vh;
+    background-color: #EDEDED;
+}
+
+.title_about_project {
+    font-weight: 500;
+    font-size: 39.06px;
+    line-height: 47px;
+    padding-top: 152px;
+    padding-bottom: 40px;
+}
+
+.second_text_project {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 160px;
+}
+
+.stat_inf {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat_module_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat_module_2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.module_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 270px;
+}
+
+.num_stat {
+    background: linear-gradient(90deg, rgba(27, 144, 203, 100%) 40%, rgba(204, 97, 255, 100%) 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.num_stat_text {
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 58px;
+}
+
+.text_stat {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
 /* --адаптив */
 
 @media (max-width: 768px) {
@@ -180,7 +244,7 @@ a {
     .container {
         max-width: 768px;
         margin: 0 auto;
-        padding: 0 0 0 20px;
+        padding: 0 20px 0 20px;
     }
     /* навигационная панель */
     .menu_body {
@@ -221,9 +285,11 @@ a {
     #frame_li_6 {
         margin-left: 0% !important;
         display: block;
+        opacity: 1;
     }
     .nav_li {
         font-size: 20px !important;
+        color: rgba(255, 255, 255, 1);
     }
     .header_burger {
         z-index: 5;
@@ -267,23 +333,63 @@ a {
     .title_img {
         display: none;
     }
+    /* о проекте */
+    .title_about_project {
+        padding: 104px 0 24px 0;
+    }
+    .second_text_project {
+        margin-bottom: 128px;
+    }
 }
 
 @media (max-width: 425px) {
     .container {
         max-width: 425px;
         margin: 0 auto;
-        padding: 0 0 0 20px;
+        padding: 0 10px 0 10px;
     }
+    /* главная */
     .header_burger {
         left: 87%;
     }
     .title_text {
-        margin-top: 145px;
+        margin-top: 15vh;
         width: 100%;
-        font-size: 32.25px;
+        font-size: 39.06px;
+        margin-bottom: 24px;
+        line-height: 48px;
     }
-    .
+    .title_sec_text {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 12.80px;
+        padding: 12px 32px;
+    }
+    /* о проекте */
+    .title_about_project {
+        font-size: 31.25px;
+        padding: 80px 0 16px 0;
+    }
+    .second_text_project {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .stat_module_1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .module_1 {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+    .text_stat {
+        font-size: 20px;
+    }
+    .stat_module_2 {
+        margin: 0;
+    }
 }
 
 @media (min-width: 769px) {
