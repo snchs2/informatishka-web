@@ -30,12 +30,12 @@
                                 </a>
                             </div>
                             <div id="frame_li_3">
-                                <a href="#">
+                                <a href="#" id="a_functional">
                                     <li class="nav_li">ФУНКЦИОНАЛ</li>
                                 </a>
                             </div>
                             <div id="frame_li_4">
-                                <a href="#">
+                                <a href="#" id="a_screenshots">
                                     <li class="nav_li">СКРИНШОТЫ</li>
                                 </a>
                             </div>
@@ -60,7 +60,7 @@
                 <h3 class="title_sec_text">
                     Информатишка - телеграм бот <br />с множеством задач для подготовки
                 </h3>
-                <a href="https://t.me/informatishka_bot" class="btn_a"><button class="btn">
+                <a href="https://t.me/informatishka_bot" class="btn_a" target="_blank"><button class="btn">
               <div class="text_in_btn">Начать подготовку</div>
             </button></a
           >
@@ -69,7 +69,7 @@
     </div>
     <div class="about_project">
       <div class="container">
-        <div class="title_about_project">
+        <div class="title_page">
           <p>О проекте</p>
         </div>
         <div class="second_text_project">
@@ -78,30 +78,117 @@
           задач ЕГЭ.
         </div>
         <div class="stat_inf">
-            <div class="stat_module_1">
-                <div class="module_1">
-                  <div class="num_stat">
-                    <p class="num_stat_text">20</p>
-                  </div>
-                  <div class="text_stat">человек ежедневно пользуются ботом</div>
-                </div>
-                <div class="module_1">
-                  <div class="num_stat">
-                    <p class="num_stat_text">245</p>
-                  </div>
-                  <div class="text_stat">человек запускали бота</div>
+          <div class="stat_module_1">
+            <div class="module_1">
+              <div class="num_stat">
+                <p class="num_stat_text">20</p>
+              </div>
+              <div class="text_stat">человек ежедневно пользуются ботом</div>
+            </div>
+            <div class="module_1">
+              <div class="num_stat">
+                <p class="num_stat_text">245</p>
+              </div>
+              <div class="text_stat">человек запускали бота</div>
+            </div>
+          </div>
+          <div class="stat_module_2">
+            <div class="module_1">
+              <div class="num_stat">
+                <p class="num_stat_text">100</p>
+              </div>
+              <div class="text_stat">баллов ЕГЭ при подготовке с чат ботом</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="functional">
+      <div class="container">
+        <div class="title_page" id="title_functional">
+          <p>Функционал</p>
+        </div>
+        <div class="block_functional">
+          <div class="block_functional-title">
+            <p>Наш чат бот может отправлять вам:</p>
+          </div>
+          <div class="func_block">
+            <div class="func_row">
+              <div class="func-col">
+                <div class="elem elem_1">
+                  <div class="elem-text">Отдельные задачи ЕГЭ</div>
                 </div>
               </div>
-              <div class="stat_module_2">
-                  <div class="module_1">
-                    <div class="num_stat">
-                      <p class="num_stat_text">100</p>
-                    </div>
-                    <div class="text_stat">баллов ЕГЭ при подготовке с чат ботом</div>
-                  </div>
+              <div class="func_col">
+                <div class="elem elem_2">
+                  <div class="elem-text">Варианты ЕГЭ</div>
+                </div>
+                <div class="elem elem_3">
+                  <div class="elem-text">Теорию</div>
+                </div>
+              </div>
             </div>
+            <div class="func_row" id="last_func_row">
+              <div class="elem elem_4">
+                <div class="elem-text">Статистику</div>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
+    </div>
+    <div class="screenshots">
+      <div class="container">
+        <div class="title_page" id="title_screenshots"><p>Скриншоты</p></div>
+        <div class="all">
+          <input checked type="radio" name="respond" id="desktop" />
+          <article id="slider">
+            <input checked type="radio" name="slider" id="switch1" />
+            <input type="radio" name="slider" id="switch2" />
+            <input type="radio" name="slider" id="switch3" />
+            <div id="slides">
+              <div id="overflow">
+                <div class="image">
+                  <article>
+                    <img src="img/screen_1.svg" height="40%" />
+                  </article>
+                  <article>
+                    <img src="img/screen_2.svg" height="40%" />
+                  </article>
+                  <article>
+                    <img src="img/screen_3.svg" height="40%" />
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div id="controls">
+              <label for="switch1"></label>
+              <label for="switch2"></label>
+              <label for="switch3"></label>
+            </div>
+            <div id="active">
+              <label for="switch1"></label>
+              <label for="switch2"></label>
+              <label for="switch3"></label>
+            </div>
+          </article>
+        </div>
+        <img src="img/QR-code.svg" alt="" class="QR-code" />
+        <div class="a_tel">
+          <a href="https://t.me/informatishka_bot" target="_blank"
+            >@informatishka_bot</a
+          >
+        </div>
+        <a
+          href="https://t.me/informatishka_bot"
+          id="btn_a-screenshots"
+          class="btn_a"
+          target="_blank"
+          ><button class="btn">
+            <div class="text_in_btn">Начать подготовку</div>
+          </button></a
+        >
+      </div>
     </div>
     <script src="js/script.js"></script>
 

@@ -39,3 +39,25 @@ a_main.addEventListener('click', () => {
     Body.classList.remove('_lock');
     menuBody.classList.remove('_active');
 })
+
+// переход в раздел функционал
+var a_functional = document.querySelector('#a_functional');
+var functional = document.querySelector('.functional');
+a_functional.addEventListener('click', () => {
+    scrollTo(functional);
+    const Body = document.querySelector('.body');
+    const menuBody = document.querySelector('.menu_body');
+    Body.classList.remove('_lock');
+    menuBody.classList.remove('_active');
+})
+
+// переход в раздел скриншоты
+var a_screenshots = document.querySelector('#a_screenshots');
+var screenshots = document.querySelector('.screenshots');
+a_screenshots.addEventListener('click', () => {
+    scrollTo(screenshots);
+    const Body = document.querySelector('.body');
+    const menuBody = document.querySelector('.menu_body');
+    Body.classList.remove('_lock');
+    menuBody.classList.remove('_active');
+})
