@@ -1,3 +1,4 @@
+// бургер
 const iconMenu = document.querySelector('.header_burger');
 if (iconMenu) {
     const menuBody = document.querySelector('.menu_body');
@@ -10,7 +11,7 @@ if (iconMenu) {
     });
 }
 
-
+// функция smooth scroll
 function scrollTo(element) {
     window.scroll({
         left: 0,
@@ -61,3 +62,68 @@ a_screenshots.addEventListener('click', () => {
     Body.classList.remove('_lock');
     menuBody.classList.remove('_active');
 })
+
+
+// анимация счетчика статистики
+
+// для первой статистики
+
+var number = document.querySelector('.num_stat_text'),
+    numberTop = number.getBoundingClientRect().top,
+    start = +number.innerHTML,
+    end = +number.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > numberTop - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+            number.innerHTML = ++start;
+            if (start == end) {
+                clearInterval(interval);
+            }
+        }, 5);
+    }
+});
+
+// для второй статистики
+
+var number2 = document.querySelector('.num_stat_text2'),
+    numberTop2 = number2.getBoundingClientRect().top,
+    start2 = +number2.innerHTML,
+    end2 = +number2.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > numberTop2 - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+            number2.innerHTML = ++start2;
+            if (start2 == end2) {
+                clearInterval(interval);
+            }
+        }, 5);
+    }
+});
+
+// для третьей статистики
+
+var number3 = document.querySelector('.num_stat_text3'),
+    numberTop3 = number3.getBoundingClientRect().top,
+    start3 = +number3.innerHTML,
+    end3 = +number3.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > numberTop3 - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+            number3.innerHTML = ++start3;
+            if (start3 == end3) {
+                clearInterval(interval);
+            }
+        }, 5);
+    }
+});
+
+
+
+// --------
+new Gallery(document.getElementById("gallery"), { margin: 10 });

@@ -7,7 +7,9 @@
     <title>Informatishka</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body class="body">
@@ -81,21 +83,19 @@
           <div class="stat_module_1">
             <div class="module_1">
               <div class="num_stat">
-                <p class="num_stat_text">20</p>
+                <div class="num_stat_text" data-max="20">0</div>
               </div>
               <div class="text_stat">человек ежедневно пользуются ботом</div>
             </div>
             <div class="module_1">
               <div class="num_stat">
-                <p class="num_stat_text">245</p>
+                <div class="num_stat_text2" data-max="245">0</div>
               </div>
               <div class="text_stat">человек запускали бота</div>
             </div>
-          </div>
-          <div class="stat_module_2">
             <div class="module_1">
               <div class="num_stat">
-                <p class="num_stat_text">100</p>
+                <div class="num_stat_text3" data-max="100">0</div>
               </div>
               <div class="text_stat">баллов ЕГЭ при подготовке с чат ботом</div>
             </div>
@@ -140,56 +140,40 @@
     <div class="screenshots">
       <div class="container">
         <div class="title_page" id="title_screenshots"><p>Скриншоты</p></div>
-        <div class="all">
-          <input checked type="radio" name="respond" id="desktop" />
-          <article id="slider">
-            <input checked type="radio" name="slider" id="switch1" />
-            <input type="radio" name="slider" id="switch2" />
-            <input type="radio" name="slider" id="switch3" />
-            <div id="slides">
-              <div id="overflow">
-                <div class="image">
-                  <article>
-                    <img src="img/screen_1.svg" height="40%" />
-                  </article>
-                  <article>
-                    <img src="img/screen_2.svg" height="40%" />
-                  </article>
-                  <article>
-                    <img src="img/screen_3.svg" height="40%" />
-                  </article>
-                </div>
-              </div>
+        <div class="block-screen">
+          <div id="gallery">
+            <div class="slide slide-1">
+              <img src="img/screen_1.svg" height="560px" />
             </div>
-            <div id="controls">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
+            <div class="slide slide-2">
+              <img src="img/screen_2.svg" height="560px" />
             </div>
-            <div id="active">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
+            <div class="slide slide-3">
+              <img src="img/screen_3.svg" height="560px" />
             </div>
-          </article>
+          </div>
+          <div class="qr-block">
+            <img src="img/QR-code.svg" alt="" class="QR-code" />
+            <div class="a_tel">
+              <a href="https://t.me/informatishka_bot" target="_blank"
+                >@informatishka_bot</a
+              >
+            </div>
+            <a
+              href="https://t.me/informatishka_bot"
+              id="btn_a-screenshots"
+              class="btn_a"
+              target="_blank"
+              ><button class="btn">
+                <div class="text_in_btn">Начать подготовку</div>
+              </button></a
+            >
+          </div>
         </div>
-        <img src="img/QR-code.svg" alt="" class="QR-code" />
-        <div class="a_tel">
-          <a href="https://t.me/informatishka_bot" target="_blank"
-            >@informatishka_bot</a
-          >
-        </div>
-        <a
-          href="https://t.me/informatishka_bot"
-          id="btn_a-screenshots"
-          class="btn_a"
-          target="_blank"
-          ><button class="btn">
-            <div class="text_in_btn">Начать подготовку</div>
-          </button></a
-        >
       </div>
     </div>
+
+    <script src="js/gallery.js"></script>
     <script src="js/script.js"></script>
 
     <!-- скролл страницы -->

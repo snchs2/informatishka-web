@@ -98,8 +98,7 @@ img {
     flex: none;
     order: 0;
     flex-grow: 0;
-    transition: .2s;
-    -webkit-transition: .6s;
+    transition: .6s;
 }
 
 .nav_li:hover {
@@ -149,11 +148,11 @@ img {
     border: none;
     background-size: 300% 100%;
     /* padding: 16px 32px; */
-    box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.5);
     border-radius: 8px;
     background: linear-gradient(90deg, #0088CC, #CC61FF, #CC61FF, #0088CC, #0088CC);
     background-size: 400%;
     padding: 16px 32px;
+    transition: 0.39s;
 }
 
 .text_in_btn {
@@ -164,7 +163,7 @@ img {
 /* ----анимация кнопки при наведении */
 
 .btn:hover {
-    animation: button 10s linear infinite;
+    box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.7);
 }
 
 @keyframes button {
@@ -190,7 +189,7 @@ img {
     font-size: 39.06px;
     line-height: 47px;
     padding-top: 152px;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
 }
 
 .second_text_project {
@@ -208,12 +207,7 @@ img {
 .stat_module_1 {
     display: flex;
     justify-content: space-around;
-}
-
-.stat_module_2 {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: 32px;
 }
 
 .module_1 {
@@ -221,6 +215,11 @@ img {
     flex-direction: column;
     text-align: center;
     max-width: 270px;
+    margin-right: 15px;
+}
+
+.module_1:last-child {
+    margin: 0;
 }
 
 .num_stat {
@@ -230,6 +229,18 @@ img {
 }
 
 .num_stat_text {
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 58px;
+}
+
+.num_stat_text2 {
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 58px;
+}
+
+.num_stat_text3 {
     font-weight: 600;
     font-size: 48.83px;
     line-height: 58px;
@@ -246,7 +257,7 @@ img {
 /* ФУНКЦИОНАЛ */
 
 .functional {
-    background: url(../img/fon_functional.svg);
+    background: url(../img/fon_functional.jpg);
     min-height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
@@ -254,10 +265,6 @@ img {
     background-size: cover;
     background-color: #0088CC;
     color: #FFFFFF;
-}
-
-#title_functional {
-    padding-bottom: 128px;
 }
 
 .block_functional {
@@ -268,8 +275,7 @@ img {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
-    text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 144px;
 }
 
 .func-block {
@@ -297,10 +303,17 @@ img {
 
 .elem {
     align-items: center;
-    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    border: 2px solid #F0F0F0;
+    background-color: #F0F0F0;
+    transition: 0.3s;
+}
+
+.elem:hover {
     border: 2px solid #FFFFFF;
     background-color: #FFFFFF;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+    transform: translate3d(-5px, -5px, 0);
 }
 
 .elem-text {
@@ -346,104 +359,18 @@ img {
     padding-bottom: 104px;
 }
 
+.block-screen {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 /* слайдер */
 
-#slider {
-    position: relative;
-    text-align: center;
-    top: 10px;
-    margin: 0 auto;
-}
-
-#slides article {
-    width: 20%;
-    float: left;
-}
-
-#slides .image {
-    width: 500%;
-    line-height: 0;
-    height: 100px;
-}
-
-#overflow {
-    width: 100%;
-    overflow: hidden;
-}
-
-article img {
-    width: 100%;
-}
-
-#desktop:checked~#slider {
-    max-width: 300px;
-}
-
-label,
-a {
-    cursor: pointer;
-}
-
-.all input {
-    display: none;
-}
-
-#switch1:checked~#slides .image {
-    margin-left: 0;
-}
-
-#switch2:checked~#slides .image {
-    margin-left: -100%;
-}
-
-#switch3:checked~#slides .image {
-    margin-left: -200%;
-}
-
-#controls {
-    margin: -100% 0 0 0;
-    width: 100%;
-    height: 50px;
-}
-
-#active label {
-    border-radius: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #bbb;
-}
-
-#active {
-    margin: 85% 0 0;
-    text-align: center;
-}
-
-#active label:hover {
-    background: #76c8ff;
-    border-color: #777;
-}
-
-#switch1:checked~#active label:nth-child(1),
-#switch2:checked~#active label:nth-child(2),
-#switch3:checked~#active label:nth-child(3),
-#switch4:checked~#active label:nth-child(4),
-#switch5:checked~#active label:nth-child(5) {
-    background: rgba(27, 144, 203, 100%);
-    border-color: rgba(27, 144, 203, 100%) !important;
-}
-
-#slides .image {
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#controls label:hover {
-    opacity: 0.6;
-}
-
-#controls label {
-    transition: opacity 0.2s ease-out;
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -452,7 +379,7 @@ a {
 .QR-code {
     display: flex;
     justify-content: center;
-    margin: 204px auto 24px auto;
+    margin: 48px auto 24px auto;
 }
 
 .a_tel {
@@ -572,7 +499,7 @@ a {
         padding-bottom: 50px;
     }
     .title_page {
-        padding: 104px 0 24px 0;
+        padding: 64px 0 24px 0;
     }
     .second_text_project {
         margin-bottom: 128px;
@@ -588,6 +515,14 @@ a {
     .elem {
         margin: 0 0 15px 0;
         padding: 32px 56px;
+    }
+    /* скриншоты */
+    #title_screenshots {
+        padding-bottom: 80px;
+    }
+    .block-screen {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -612,8 +547,8 @@ a {
         font-size: 20px;
     }
     .btn {
-        font-size: 12.80px;
-        padding: 12px 32px;
+        display: flex;
+        margin: 0 auto;
     }
     /* о проекте */
     .about_project {
@@ -621,7 +556,7 @@ a {
     }
     .title_page {
         font-size: 31.25px;
-        padding: 80px 0 16px 0;
+        padding: 32px 0 16px 0;
     }
     .second_text_project {
         font-size: 20px;
@@ -639,20 +574,21 @@ a {
     .text_stat {
         font-size: 20px;
     }
-    .stat_module_2 {
-        margin: 0;
-    }
     /* функционал */
-    #title_functional {
-        padding-bottom: 56px;
+    .block_functional-title {
+        font-size: 20px;
+        margin-bottom: 80px;
     }
     /* скриншоты */
     .QR-code {
         height: 250px;
-        margin: 100px auto 8px auto;
+        margin: 48px auto 8px auto;
     }
     .a_tel {
         font-size: 25px;
+    }
+    #last_func_row {
+        padding-bottom: 32px;
     }
 }
 
@@ -716,6 +652,3 @@ a {
         padding-bottom: 50px;
     }
 }
-
-
-/* --------------------------------- */
