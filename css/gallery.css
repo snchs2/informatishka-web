@@ -4,6 +4,7 @@
     user-select: none;
     -webkit-user-select: none;
     padding: 0;
+    width: 100%;
 }
 
 .gallery-line-container {
@@ -54,10 +55,32 @@
     padding: 1rem 0 0;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
     .gallery {
         padding: 0;
         width: 70%;
+        margin: 0 auto;
+    }
+    .gallery-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .gallery {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .gallery-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .gallery {
+        padding: 0;
+        width: 90%;
         margin: 0 auto;
     }
     .gallery-nav {
