@@ -149,10 +149,10 @@ img {
     background-size: 300% 100%;
     /* padding: 16px 32px; */
     border-radius: 8px;
-    background: linear-gradient(90deg, #0088CC, #CC61FF, #CC61FF, #0088CC, #0088CC);
+    background: linear-gradient(90deg, rgba(0, 136, 204, 0.7), rgba(204, 97, 255, 0.7), rgba(204, 97, 255, 0.7), rgba(0, 136, 204, 0.7), rgba(0, 136, 204, 0.7));
     background-size: 400%;
     padding: 16px 32px;
-    transition: 0.39s;
+    transition: 0.4s;
 }
 
 .text_in_btn {
@@ -163,6 +163,7 @@ img {
 /* ----анимация кнопки при наведении */
 
 .btn:hover {
+    background: linear-gradient(90deg, rgba(0, 136, 204, 1), rgba(204, 97, 255, 1));
     box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.7);
 }
 
@@ -398,6 +399,80 @@ img {
 }
 
 
+/* ОТЗЫВЫ */
+
+.feedback {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-bottom: 100px;
+}
+
+#title_feedback {
+    padding-bottom: 80px;
+}
+
+.row_feedback {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+    width: 100%;
+}
+
+.massage_feedback {
+    background: #000000;
+    border-radius: 50px;
+    padding: 25px 15% 25px 15%;
+}
+
+.massage_feedback p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* ФУТЕР */
+
+.footer {
+    min-height: 30vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.block_title {
+    text-align: center;
+}
+
+.footer-title {
+    padding: 15vh 0 3vh 0;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 37px;
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 3vhj;
+}
+
+.social_a {
+    left: 47%;
+    display: flex;
+    justify-content: center;
+}
+
+.vk_a {
+    margin-right: 24px;
+}
+
+
 /* --адаптив */
 
 @media (max-width: 768px) {
@@ -524,6 +599,12 @@ img {
         display: flex;
         flex-direction: column;
     }
+    /* отзывы */
+    .massage_feedback {
+        background: #000000;
+        border-radius: 50px;
+        padding: 20px 10% 20px 10%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -537,14 +618,16 @@ img {
         left: 87%;
     }
     .title_text {
-        margin-top: 15vh;
+        margin-top: 20vh;
         width: 100%;
         font-size: 39.06px;
         margin-bottom: 24px;
         line-height: 48px;
+        text-align: center;
     }
     .title_sec_text {
         font-size: 20px;
+        text-align: center;
     }
     .btn {
         display: flex;
@@ -590,6 +673,10 @@ img {
     #last_func_row {
         padding-bottom: 32px;
     }
+    /* отзывы */
+    .massage_feedback p {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -607,6 +694,8 @@ img {
         width: 290px;
         height: 220px;
     }
+    /* отзыв  */
+    .row_feedback {}
 }
 
 @media (min-width: 1000px) {
