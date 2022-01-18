@@ -216,7 +216,6 @@ img {
     flex-direction: column;
     text-align: center;
     max-width: 270px;
-    margin-right: 15px;
 }
 
 .module_1:last-child {
@@ -417,6 +416,7 @@ img {
     justify-content: space-between;
     margin-bottom: 20vh;
     width: 100%;
+    align-items: center;
 }
 
 .massage_feedback {
@@ -438,10 +438,9 @@ img {
 /* ФУТЕР */
 
 .footer {
-    min-height: 30vh;
     background-color: #000000;
     color: #FFFFFF;
-    padding-bottom: 100px;
+    padding: 0 5% 8vh 5%;
 }
 
 .block_title {
@@ -449,7 +448,7 @@ img {
 }
 
 .footer-title {
-    padding: 15vh 0 3vh 0;
+    padding: 10vh 0 3vh 0;
     font-weight: 500;
     font-size: 31.25px;
     line-height: 37px;
@@ -459,7 +458,7 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 3vhj;
+    margin-bottom: 5vh;
 }
 
 .social_a {
@@ -470,6 +469,22 @@ img {
 
 .vk_a {
     margin-right: 24px;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+a .vk_a:hover {
+    opacity: 1;
+}
+
+.telegram_a {
+    margin-right: 24px;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+a .telegram_a:hover {
+    opacity: 1;
 }
 
 
@@ -569,6 +584,10 @@ img {
     .title_img {
         display: none;
     }
+    .btn {
+        background: linear-gradient(90deg, rgba(0, 136, 204, 1), rgba(204, 97, 255, 1));
+        box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.7);
+    }
     /* о проекте */
     .about_project {
         padding-bottom: 50px;
@@ -632,6 +651,8 @@ img {
     .btn {
         display: flex;
         margin: 0 auto;
+        background: linear-gradient(90deg, rgba(0, 136, 204, 1), rgba(204, 97, 255, 1));
+        box-shadow: 0px 0px 30px rgba(59, 102, 201, 0.7);
     }
     /* о проекте */
     .about_project {
@@ -653,6 +674,7 @@ img {
     .module_1 {
         width: 270px;
         margin-bottom: 10px;
+        margin-right: 0px;
     }
     .text_stat {
         font-size: 20px;
@@ -694,8 +716,6 @@ img {
         width: 290px;
         height: 220px;
     }
-    /* отзыв  */
-    .row_feedback {}
 }
 
 @media (min-width: 1000px) {
