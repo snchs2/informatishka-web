@@ -63,6 +63,16 @@ a_screenshots.addEventListener('click', () => {
     menuBody.classList.remove('_active');
 })
 
+// переход в раздел отзывы
+var a_feedback = document.querySelector('#nav_a_feedback');
+var feedback = document.querySelector('.feedback');
+a_feedback.addEventListener('click', () => {
+    scrollTo(feedback);
+    const Body = document.querySelector('.body');
+    const menuBody = document.querySelector('.menu_body');
+    Body.classList.remove('_lock');
+    menuBody.classList.remove('_active');
+})
 
 // анимация счетчика статистики
 
