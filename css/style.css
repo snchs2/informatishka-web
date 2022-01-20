@@ -422,7 +422,8 @@ img {
 .massage_feedback {
     background: #000000;
     border-radius: 50px;
-    padding: 25px 15% 25px 15%;
+    width: 80%;
+    padding: 25px 10% 25px 10%;
 }
 
 .massage_feedback p {

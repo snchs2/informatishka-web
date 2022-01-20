@@ -135,5 +135,5 @@ window.addEventListener('scroll', function onScroll() {
 
 
 
-// --------
+// галерея сенсорного слайдера
 new Gallery(document.getElementById("gallery"), { margin: 10 });
